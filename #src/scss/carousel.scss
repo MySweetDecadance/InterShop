@@ -1,0 +1,235 @@
+.slider {
+    position: relative;
+}
+
+.carousel {
+    position: relative;
+    &__item {
+        position: relative;
+        padding: 10px 10px;
+        margin: 20px 20px;
+        height: 330px;
+        &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        &:hover .carousel-button {
+            display: block;
+            z-index: 9999;
+        }
+        &:hover .carousel__show-title {
+            display: block;
+            z-index: 9999;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+    &__show-title {
+        color: #000000;
+        display: none;
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 90px);
+        box-sizing: border-box;
+        width: 180px;
+        height: 40px;
+        border: 1px solid #E0DFDA;
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        padding: 10px 0;
+        z-index: 800;
+    }
+    &__img {}
+}
+
+.carousel-circle {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(5% - 0px);
+    left: calc(10% - 0px);
+    padding: 10px 5px;
+}
+
+.carousel-circle-text {}
+
+.carousel-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-link {
+    outline: none;
+}
+
+.carousel-price {}
+
+.carousel-name {
+    color: #000000;
+}
+
+.carousel-button {
+    position: absolute;
+    bottom: calc(5% - 0px);
+    left: calc(50% - 115px);
+    width: 230px;
+    height: 48px;
+    text-decoration: none;
+    padding-top: 9px;
+    color: #FFFFFF;
+    line-height: 20px;
+    display: block;
+    display: none;
+    &:focus {
+        outline: 0;
+    }
+    &:not(:hover) {
+        transition: 0.6s;
+    }
+    &:not(.active) {
+        background: #000000;
+    }
+    &:not(.active):hover,
+    &:not(.active):focus {
+        transition: color 200ms linear, text-shadow 500ms linear;
+        color: #fff;
+        text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+    }
+}
+
+.title {
+    &__text {
+        font-size: 30px;
+    }
+}
+
+.all-production {
+    position: relative;
+    &__link {
+        display: flex;
+        justify-content: flex-end;
+        color: #000000;
+    }
+}
+
+.hits-title {
+    margin: 68px 0 20px 0;
+}
+
+.popular-products {
+    position: relative;
+}
+
+.popular-title {
+    margin-top: 49px;
+}
+
+.salon-subtitle {
+    margin: 30px 0;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+///////////////////////////////////Стилизация кнопок
+.carousel-today .slick-arrow,
+.carousel .slick-arrow,
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    box-shadow: 0px 0px 24px rgba(51, 51, 51, 0.12);
+    border-radius: 50%;
+    outline: none
+}
+
+.carousel-today .slick-arrow.slick-prev,
+.carousel .slick-arrow.slick-prev,
+.slider .slick-arrow.slick-prev {
+    opacity: 0;
+    left: 0;
+    font-size: 0;
+    background: url('../img/page/prevArrow.svg') 0 0 / 100% no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.carousel-today .slick-arrow.slick-next,
+.carousel .slick-arrow.slick-next,
+.slider .slick-arrow.slick-next {
+    opacity: 0;
+    right: 0;
+    font-size: 0;
+    background: url('../img/page/nextArrow.svg') 0 0 / 100% no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.carousel-today:hover .slick-arrow.slick-prev,
+.carousel:hover .slick-arrow.slick-prev,
+.slider:hover .slick-arrow.slick-prev {
+    opacity: 1;
+}
+
+.carousel-today:hover .slick-arrow.slick-next,
+.carousel:hover .slick-arrow.slick-next,
+.slider:hover .slick-arrow.slick-next {
+    opacity: 1;
+}
+
+//////////////////////////////////////////Точки
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-dots li {
+    margin: 0 8px;
+    border: 1px solid #fff;
+}
+
+.slick-dots li :focus {
+    outline: none;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #000000;
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.brands-title {
+    margin: 0px 0 40px 0;
+}
+
+.today {
+    width: 100%;
+    text-align: center;
+}
+
+.subtitle {
+    &__text {
+        font-size: 20px;
+    }
+}

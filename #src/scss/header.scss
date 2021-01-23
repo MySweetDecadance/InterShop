@@ -1,0 +1,30 @@
+.header {
+    background: #f2f2f2;
+    &__text {
+    }
+}
+.header-body {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1180px;
+    padding: 16.5px 0px;
+    margin: auto;
+}
+.phone {
+    display: flex;
+		&__item {
+            a {
+                color: black;
+                margin-left: 15px;
+            }            
+		}
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+.main-advantages {    
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 185px;
+    margin: 80px 0;
+    padding: 35px 15px;
+    max-width: 1180px;
+}
+.main-advantage {
+    &__single {
+        width: calc(25% - 30px);
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__img {
+        height: 80px;
+            margin-bottom: 20px;
+    }
+
+    &__h3-text {
+        font-size: 19px;
+            line-height: 20px;
+            color: black;
+            margin: 0;
+    }
+
+    &__p-text {
+        line-height: 17px;
+    }
+}
